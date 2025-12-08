@@ -130,6 +130,12 @@ class LoginViewController: UIViewController {
     @objc private func loginTapped() {
         // TODO: Implement Firebase authentication
         print("Login with: \(emailTextField.text ?? "")")
+        // For now, navigate to Customer Dashboard
+        let customerDashboard = CustomerDashboardViewController()
+        let navController = UINavigationController(rootViewController: customerDashboard)
+        navController.modalPresentationStyle = .fullScreen
+        present(navController, animated: true)
+
     }
 
     @objc private func signupTapped() {

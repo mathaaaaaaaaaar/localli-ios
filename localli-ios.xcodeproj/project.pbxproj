@@ -45,6 +45,31 @@
 			);
 			target = E1DBF5C82ED1985600C838F7 /* localli-ios */;
 		};
+		E1CE70842EE65C1100529D44 /* Exceptions for "Customer" folder in "localli-ios" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BookingConfirmationViewController.swift,
+				BookingFlowViewController.swift,
+				BusinessDetailsViewController.swift,
+				CustomerBookingHistoryViewController.swift,
+				CustomerDashboardViewController.swift,
+				ServiceDetailsViewController.swift,
+				ServiceListingsViewController.swift,
+			);
+			target = E1DBF5C82ED1985600C838F7 /* localli-ios */;
+		};
+		E1CE70862EE65C1A00529D44 /* Exceptions for "Components" folder in "localli-ios" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BookingCell.swift,
+				BookingHistoryCell.swift,
+				CategoryCell.swift,
+				ServiceCell.swift,
+				ServiceDetailsCell.swift,
+				TimeSlotCell.swift,
+			);
+			target = E1DBF5C82ED1985600C838F7 /* localli-ios */;
+		};
 		E1DBF5F42ED1985800C838F7 /* Exceptions for "localli" folder in "localli-ios" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -69,6 +94,27 @@
 				E1CE707A2EE5324000529D44 /* Exceptions for "Auth" folder in "localli-ios" target */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		E1CE707D2EE53A5D00529D44 /* Customer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E1CE70842EE65C1100529D44 /* Exceptions for "Customer" folder in "localli-ios" target */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		E1CE707E2EE53A6300529D44 /* Businesses */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Businesses;
+			sourceTree = "<group>";
+		};
+		E1CE70822EE65AEF00529D44 /* Components */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E1CE70862EE65C1A00529D44 /* Exceptions for "Components" folder in "localli-ios" target */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E1DBF5CB2ED1985600C838F7 /* localli */ = {
@@ -119,6 +165,9 @@
 		E1CE70712EE5306800529D44 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E1CE70822EE65AEF00529D44 /* Components */,
+				E1CE707E2EE53A6300529D44 /* Businesses */,
+				E1CE707D2EE53A5D00529D44 /* Customer */,
 				E1CE70742EE530D200529D44 /* Auth */,
 				E1CE70722EE5308100529D44 /* Onboarding */,
 			);

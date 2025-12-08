@@ -230,5 +230,18 @@ class SignupViewController: UIViewController {
     @objc private func signupTapped() {
         // TODO: Implement Firebase signup
         print("Sign up as \(selectedRole)")
+        // Navigate based on selected role
+        if selectedRole == "customer" {
+            let customerDashboard = CustomerDashboardViewController()
+            let navController = UINavigationController(rootViewController: customerDashboard)
+            navController.modalPresentationStyle = .fullScreen
+            present(navController, animated: true)
+        } else {
+//            let businessDashboard = BusinessDashboardViewController()
+//            let navController = UINavigationController(rootViewController: businessDashboard)
+//            navController.modalPresentationStyle = .fullScreen
+//            present(navController, animated: true)
+        }
+
     }
 }
